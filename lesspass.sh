@@ -10,7 +10,7 @@ fi
 mkdir $OUTPUT_DIR
 cd $OUTPUT_DIR
 
-curl -o docker-compose.yml https://raw.githubusercontent.com/lesspass/lesspass/master/docker-compose.prod.yml
+curl -o docker-compose.yml https://raw.githubusercontent.com/pvardanega/lesspass/raspberry-pi/docker-compose.rpi.prod.yml
 
 DATABASE_PASSWORD=$(LC_ALL=C tr -dc A-Za-z0-9_ </dev/urandom | head -c 32)
 SECRET_KEY=$(LC_ALL=C tr -dc A-Za-z0-9_ </dev/urandom | head -c 32)
